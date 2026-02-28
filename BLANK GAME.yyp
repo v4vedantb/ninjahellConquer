@@ -30,7 +30,6 @@
   },
   "name":"BLANK GAME",
   "resources":[
-    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"starterRoom","path":"rooms/starterRoom/starterRoom.yy",},},
     {"id":{"name":"oCactus1","path":"sprites/oCactus1/oCactus1.yy",},},
     {"id":{"name":"oDragonSkull1","path":"sprites/oDragonSkull1/oDragonSkull1.yy",},},
@@ -59,6 +58,7 @@
     {"id":{"name":"sRightSides","path":"sprites/sRightSides/sRightSides.yy",},},
     {"id":{"name":"sSpiderWebGroundRight","path":"sprites/sSpiderWebGroundRight/sSpiderWebGroundRight.yy",},},
     {"id":{"name":"sSpiderWebLeft","path":"sprites/sSpiderWebLeft/sSpiderWebLeft.yy",},},
+    {"id":{"name":"sWarriorRun","path":"sprites/sWarriorRun/sWarriorRun.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
