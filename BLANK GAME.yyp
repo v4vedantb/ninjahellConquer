@@ -30,6 +30,7 @@
   },
   "name":"BLANK GAME",
   "resources":[
+    {"id":{"name":"objSolid","path":"objects/objSolid/objSolid.yy",},},
     {"id":{"name":"oClouds","path":"objects/oClouds/oClouds.yy",},},
     {"id":{"name":"oGroundLeft","path":"objects/oGroundLeft/oGroundLeft.yy",},},
     {"id":{"name":"oHouse","path":"objects/oHouse/oHouse.yy",},},

@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oStarterFloor",
+  "%Name":"objSolid",
   "eventList":[],
   "managed":true,
-  "name":"oStarterFloor",
+  "name":"objSolid",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"objSolid",
-    "path":"objects/objSolid/objSolid.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sStarterFloor",
-    "path":"sprites/sStarterFloor/sStarterFloor.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
