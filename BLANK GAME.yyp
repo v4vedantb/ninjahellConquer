@@ -31,12 +31,14 @@
   "name":"BLANK GAME",
   "resources":[
     {"id":{"name":"oClouds","path":"objects/oClouds/oClouds.yy",},},
+    {"id":{"name":"oGroundLeft","path":"objects/oGroundLeft/oGroundLeft.yy",},},
     {"id":{"name":"oHouse","path":"objects/oHouse/oHouse.yy",},},
     {"id":{"name":"oSoil","path":"objects/oSoil/oSoil.yy",},},
     {"id":{"name":"oStarterBG","path":"objects/oStarterBG/oStarterBG.yy",},},
     {"id":{"name":"oStarterFloor","path":"objects/oStarterFloor/oStarterFloor.yy",},},
     {"id":{"name":"oWarrior","path":"objects/oWarrior/oWarrior.yy",},},
     {"id":{"name":"starterRoom","path":"rooms/starterRoom/starterRoom.yy",},},
+    {"id":{"name":"undergroundLevel1","path":"rooms/undergroundLevel1/undergroundLevel1.yy",},},
     {"id":{"name":"oCactus1","path":"sprites/oCactus1/oCactus1.yy",},},
     {"id":{"name":"oDragonSkull1","path":"sprites/oDragonSkull1/oDragonSkull1.yy",},},
     {"id":{"name":"oFloor1","path":"sprites/oFloor1/oFloor1.yy",},},
@@ -44,7 +46,6 @@
     {"id":{"name":"oFloorFinishRight1","path":"sprites/oFloorFinishRight1/oFloorFinishRight1.yy",},},
     {"id":{"name":"oGrassDown1","path":"sprites/oGrassDown1/oGrassDown1.yy",},},
     {"id":{"name":"oGrassTop1","path":"sprites/oGrassTop1/oGrassTop1.yy",},},
-    {"id":{"name":"oGroundLeft1","path":"sprites/oGroundLeft1/oGroundLeft1.yy",},},
     {"id":{"name":"oGroundRight1","path":"sprites/oGroundRight1/oGroundRight1.yy",},},
     {"id":{"name":"oLeftSide1","path":"sprites/oLeftSide1/oLeftSide1.yy",},},
     {"id":{"name":"oRightSides1","path":"sprites/oRightSides1/oRightSides1.yy",},},
@@ -75,6 +76,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"starterRoom","path":"rooms/starterRoom/starterRoom.yy",},},
+    {"roomId":{"name":"undergroundLevel1","path":"rooms/undergroundLevel1/undergroundLevel1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
