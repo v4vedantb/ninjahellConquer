@@ -1,5 +1,5 @@
 // What we follow
-target = obj_Player;
+target = global.obj_Player;
 
 // Camera view size (what the camera "sees" in the room)
 cam_w = 320;
