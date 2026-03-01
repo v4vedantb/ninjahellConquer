@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object7",
+  "%Name":"oSecondBG1",
   "eventList":[],
   "managed":true,
-  "name":"Object7",
+  "name":"oSecondBG1",
   "overriddenProperties":[],
   "parent":{
     "name":"Grounds",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite10",
+    "path":"sprites/Sprite10/Sprite10.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
