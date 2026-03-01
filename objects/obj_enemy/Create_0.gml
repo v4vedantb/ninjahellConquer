@@ -1,31 +1,25 @@
 /// oEnemy : Create
-// ---- common stats ----
-hp           = 3;
-move_spd     = 1.5;
-gravity      = 0;       // child can override
-team         = 1;       // e.g., 1 = enemies
+hp = 3;
 
-// ---- targeting ----
-target       = obj_Player; // or set to noone and assign later
-aggro_range  = 200;
-attack_range = 32;
-facing       = 1;       // 1 right, -1 left
-
-// ---- state machine ----
-enum EState { IDLE, CHASE, ATTACK, HIT, DEAD }
-state = EState.IDLE;
-
-state_timer = 0;
-
-// ---- motion ----
 hsp = 0;
 vsp = 0;
 
-// ---- combat ----
-atk_cd_max = 40;
-atk_cd     = irandom(atk_cd_max);
+move_spd = 1.5;
+use_gravity = false;   // children decide
+gravity = 0.4;
 
-// ---- helpers ----
+target = oPlayer;
+
+enum EState { IDLE, CHASE, ATTACK, HIT, DEAD }
+state = EState.IDLE;
+
+aggro_range  = 200;
+attack_range = 32;
+
+atk_cd_max = 40;
+atk_cd = irandom(atk_cd_max);
+
+facing = 1;
 alive = true;
 
 self.enemy_idle = enemy_idle;
