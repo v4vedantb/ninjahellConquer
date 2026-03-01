@@ -119,7 +119,7 @@ cool_tick++;
 
 i_frame++;
 
-if (place_meeting(x, y, obj_enemy) && i_frame > 30)
+if (place_meeting(x, y, obj_enemy) && i_frame > 45)
 {
 	hp -= 1;
 	i_frame = 0;
