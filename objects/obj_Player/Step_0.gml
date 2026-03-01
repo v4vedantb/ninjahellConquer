@@ -128,7 +128,7 @@ if (attack_pressed && !instance_exists(obj_yoyo)) {
 
     // launch direction
     var dir = (image_xscale > 0) ? 0 : 180;
-    var spd = 5;
+    var spd = 3;
 
     yy.vx = lengthdir_x(spd, dir);
     yy.vy = lengthdir_y(spd, dir);
