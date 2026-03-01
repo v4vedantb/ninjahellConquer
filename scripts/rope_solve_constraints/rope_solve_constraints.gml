@@ -44,7 +44,7 @@ function rope_solve_constraints(_ax, _ay) {
         // OPTIONAL: rope collision with world (makes string wrap-ish)
         // Keep it cheap: only collide a few points (or all if your room is small)
         for (var j = 1; j < seg_count; j++) {
-            if (place_meeting(rope_x[j], rope_y[j], obj_Ground)) {
+            if (place_meeting(rope_x[j], rope_y[j], obj_ground)) {
                 // simple push out upwards (cheap). Better: push along smallest overlap axis.
                 rope_y[j] -= 1;
             }

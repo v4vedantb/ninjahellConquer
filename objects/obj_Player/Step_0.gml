@@ -11,7 +11,7 @@ else
 	jump_buffer = max(0, jump_buffer - 1);
 
 // GROUND CHECK (1px below)
-var on_ground = place_meeting(x, y + 1, obj_Ground);
+var on_ground = place_meeting(x, y + 1, obj_ground);
 
 // COYOTE time
 if (on_ground)
@@ -58,7 +58,7 @@ x_rem -= move_x;
 
 var sx = sign(move_x);
 repeat (abs(move_x)) {
-    if (!place_meeting(x + sx, y, obj_Ground)) {
+    if (!place_meeting(x + sx, y, obj_ground)) {
         x += sx;
     } else {
         // stop on wall
@@ -76,7 +76,7 @@ y_rem -= move_y;
 
 var sy = sign(move_y);
 repeat (abs(move_y)) {
-    if (!place_meeting(x, y + sy, obj_Ground)) {
+    if (!place_meeting(x, y + sy, obj_ground)) {
         y += sy;
     } else {
         // land / hit ceiling

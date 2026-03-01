@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Ground",
+  "%Name":"obj_ground",
   "eventList":[],
   "managed":true,
-  "name":"obj_Ground",
+  "name":"obj_ground",
   "overriddenProperties":[],
   "parent":{
     "name":"Enviornment",

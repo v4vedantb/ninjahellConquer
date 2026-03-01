@@ -1,12 +1,12 @@
 function yoyo_resolve_overlap() {
     // If we are inside solid, push out upward first (floor case),
     // then try other directions if needed.
-    if (!place_meeting(x, y, obj_Ground)) return;
+    if (!place_meeting(x, y, obj_ground)) return;
 
     // try up to 32 pixels up (enough for your 20x20 world)
     for (var i = 0; i < 32; i++) {
         y -= 1;
-        if (!place_meeting(x, y, obj_Ground)) {
+        if (!place_meeting(x, y, obj_ground)) {
             if (vy > 0) vy = 0; // stop sinking force
             return;
         }
@@ -19,7 +19,7 @@ function yoyo_resolve_overlap() {
             var ang = a * (360 / dirs);
             var tx = x + lengthdir_x(r, ang);
             var ty = y + lengthdir_y(r, ang);
-            if (!place_meeting(tx, ty, obj_Ground)) {
+            if (!place_meeting(tx, ty, obj_ground)) {
                 x = tx; y = ty;
                 vx = 0; vy = 0;
                 return;
