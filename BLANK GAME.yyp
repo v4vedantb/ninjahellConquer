@@ -30,6 +30,7 @@
   },
   "name":"BLANK GAME",
   "resources":[
+    {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
     {"id":{"name":"objSolid","path":"objects/objSolid/objSolid.yy",},},
     {"id":{"name":"oClouds","path":"objects/oClouds/oClouds.yy",},},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},},
@@ -79,6 +80,7 @@
     {"id":{"name":"sStarterFloor","path":"sprites/sStarterFloor/sStarterFloor.yy",},},
     {"id":{"name":"sUndergroundBG","path":"sprites/sUndergroundBG/sUndergroundBG.yy",},},
     {"id":{"name":"sWarriorIdle","path":"sprites/sWarriorIdle/sWarriorIdle.yy",},},
+    {"id":{"name":"sWarriorMask","path":"sprites/sWarriorMask/sWarriorMask.yy",},},
     {"id":{"name":"sWarriorRun","path":"sprites/sWarriorRun/sWarriorRun.yy",},},
   ],
   "resourceType":"GMProject",

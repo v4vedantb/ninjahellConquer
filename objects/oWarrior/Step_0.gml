@@ -35,3 +35,4 @@ if (place_meeting(x, y + 1, objSolid)) { // if heidi is on the ground
 }
 
 move_and_collide(xsp, vsp, objSolid)
+
