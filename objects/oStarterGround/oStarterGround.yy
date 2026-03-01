@@ -7,9 +7,12 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Grounds",
-    "path":"folders/Objects/Grounds.yy",
+    "path":"folders/Objects/Enviornment/Grounds.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Ground",
+    "path":"objects/obj_Ground/obj_Ground.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

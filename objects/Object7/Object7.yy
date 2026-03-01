@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Grounds",
-    "path":"folders/Objects/Grounds.yy",
+    "path":"folders/Objects/Enviornment/Grounds.yy",
   },
   "parentObjectId":null,
   "persistent":false,
