@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Under_Blooms",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":77.71429,
+  "exportDir":"",
+  "name":"Under_Blooms",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Under_Blooms.mp3",
+  "volume":1.0,
+}
