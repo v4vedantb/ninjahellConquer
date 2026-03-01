@@ -120,18 +120,18 @@ if (attack_pressed && !instance_exists(obj_yoyo)) {
     yy.owner = id;
 
     // anchor point (hand)
-    var ax = x + image_xscale * 10;
-    var ay = y - 6;
+    var ax = x + (sign(image_xscale) * 4);
+    var ay = y - 5;
 
     yy.x = ax;
     yy.y = ay;
 
     // launch direction
-    var dir = (image_xscale > 0) ? 0 : 180;
-    var spd = 3;
+    var dir = (image_xscale < 0) ? 0 : 180;
+    var spd = 5;
 
     yy.vx = lengthdir_x(spd, dir);
-    yy.vy = lengthdir_y(spd, dir);
+    yy.vy = lengthdir_y(spd + 5, dir);
 
     // initialize rope points from anchor to yoyo
     yy.rope_init(ax, ay);

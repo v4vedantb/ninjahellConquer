@@ -15,7 +15,7 @@ seg_len = 4;        // each rope segment ~4px
 seg_count = 12;     // total rope length ~48px (good starting range)
 constraint_iters = 8;
 gravity = 0.25;      // lower = less crazy
-max_speed = 6;          // tuned for 20x20 style
+max_speed = 8;          // tuned for 20x20 style
 
 // verlet arrays
 rope_x  = array_create(seg_count + 1, x);
