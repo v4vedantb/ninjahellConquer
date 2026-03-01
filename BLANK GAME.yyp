@@ -79,6 +79,7 @@
     {"id":{"name":"rope_verlet","path":"scripts/rope_verlet/rope_verlet.yy",},},
     {"id":{"name":"scr_enemies","path":"scripts/scr_enemies/scr_enemies.yy",},},
     {"id":{"name":"yoyo_move_and_bounce","path":"scripts/yoyo_move_and_bounce/yoyo_move_and_bounce.yy",},},
+    {"id":{"name":"yoyo_resolve_overlap","path":"scripts/yoyo_resolve_overlap/yoyo_resolve_overlap.yy",},},
     {"id":{"name":"Under_Blooms","path":"sounds/Under_Blooms/Under_Blooms.yy",},},
     {"id":{"name":"sEntranceandExit","path":"sprites/sEntranceandExit/sEntranceandExit.yy",},},
     {"id":{"name":"spr_brickfloor","path":"sprites/spr_brickfloor/spr_brickfloor.yy",},},

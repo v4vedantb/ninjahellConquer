@@ -14,7 +14,7 @@ hit_friction = 0.75;    // extra energy loss on impact
 seg_len = 4;        // each rope segment ~4px
 seg_count = 12;     // total rope length ~48px (good starting range)
 constraint_iters = 8;
-gravity = 0.25;      // lower = less crazy
+gravity = 0.15;      // lower = less crazy
 max_speed = 8;          // tuned for 20x20 style
 
 // verlet arrays
@@ -29,6 +29,6 @@ state = 0;          // 0=OUT, 1=RETRACT
 
 self.rope_init = rope_init
 self.rope_solve_constraints = rope_solve_constraints
-
+self.yoyo_resolve_overlap = yoyo_resolve_overlap
 // initialize rope points in a straight line from player hand to yoyo
 // (owner must be set right after create, so we can also re-init in a script after spawn)
