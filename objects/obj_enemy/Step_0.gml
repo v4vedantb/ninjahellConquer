@@ -17,30 +17,9 @@ if (hp < 1)
 {
 	alive = false;
 	if (hp <= 0)
-{
-    for (var i = 0; i < 8; i++)
-    {
-        instance_create_layer(
-            x + random_range(-8,8),
-            y + random_range(-8,8),
-            "Instances",
-            obj_enemy_piece
-        );
-    }
-
-    instance_destroy();
-}
-if (hp <= 0)
-{
-    // Spawn 8 pieces
-    for (var i = 0; i < 8; i++)
-    {
-        instance_create_layer(x, y, "Instances", obj_enemy_piece);
-    }
-
-    // Destroy enemy
-    instance_destroy();
-}
+	{
+	    instance_destroy();
+	}
 }
 
 if (hasTarget)

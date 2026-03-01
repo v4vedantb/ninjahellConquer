@@ -1,4 +1,5 @@
 // --- Movement tuning ---
+global.obj_Player = id;
 move_spd = 2.4;
 grav = 0.35;
 max_fall = 10;
@@ -14,6 +15,8 @@ buffer_max = 7;       // jump input buffer frames
 // --- State ---
 hsp = 0;
 vsp = 0;
+
+i_frame = 0;
 
 accel = 0.6;   // how fast you speed up
 decel = 0.7;   // how fast you slow down

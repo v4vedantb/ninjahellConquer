@@ -117,6 +117,18 @@ if (desired != sprite_index) image_index = 0; // "frame 1" visually
 
 cool_tick++;
 
+i_frame++;
+
+if (place_meeting(x, y, obj_enemy) && i_frame > 30)
+{
+	hp -= 1;
+	i_frame = 0;
+	if (hp < 1)
+	{
+		room_goto(rm_lose)
+	}
+}
+
 if (attack_pressed && cool < cool_tick) {
     var yy = instance_create_layer(x, y, "Instances", obj_kunai);
     yy.owner = id;

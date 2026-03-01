@@ -14,6 +14,10 @@ if (down) {
 }
 if image_index == 0 and accept {
 	room_goto(rm_Overworld)
+	if (instance_exists(obj_Player)){
+		global.obj_Player.x = 160;
+		global.obj_Player.y = 640;
+	}
 }
 if image_index == 1 and accept {
 	room_goto(rm_Settings)
