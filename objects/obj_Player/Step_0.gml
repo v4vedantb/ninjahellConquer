@@ -115,24 +115,28 @@ else {
 // If switching sprites, restart animation on frame 1 (frame 0 internally)
 if (desired != sprite_index) image_index = 0; // "frame 1" visually
 
-if (attack_pressed && !instance_exists(obj_yoyo)) {
-    var yy = instance_create_layer(x, y, "Instances", obj_yoyo);
+cool_tick++;
+
+if (attack_pressed && cool < cool_tick) {
+    var yy = instance_create_layer(x, y, "Instances", obj_kunai);
     yy.owner = id;
+	cool_tick = 0;
 
     // anchor point (hand)
-    var ax = x + (sign(image_xscale) * 4);
-    var ay = y - 5;
+    var ax = x;
+    var ay = y - 15;
 
     yy.x = ax;
     yy.y = ay;
+	yy.dir = -facing;
 
     // launch direction
     var dir = (image_xscale < 0) ? 0 : 180;
     var spd = 5;
 
     yy.vx = lengthdir_x(spd, dir);
-    yy.vy = lengthdir_y(spd + 5, dir);
+    //yy.vy = lengthdir_y(spd + 5, dir);
 
     // initialize rope points from anchor to yoyo
-    yy.rope_init(ax, ay);
+    //yy.rope_init(ax, ay);
 }

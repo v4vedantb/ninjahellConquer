@@ -21,6 +21,9 @@ decel = 0.7;   // how fast you slow down
 x_rem = 0;            // sub-pixel remainder for x
 y_rem = 0;            // sub-pixel remainder for y
 
+cool = 15;
+cool_tick = 0;
+
 jump_hold = 0;        // how many frames we've held jump since takeoff
 coyote = 0;
 jump_buffer = 0;

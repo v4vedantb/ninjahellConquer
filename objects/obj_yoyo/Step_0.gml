@@ -3,7 +3,7 @@ if (!instance_exists(owner)) { instance_destroy(); exit; }
 
 // anchor (player hand) - you can replace with player variables if you have a socket/bone system
 var ax = owner.x + owner.image_xscale;
-var ay = owner.y;
+var ay = owner.y - 4;
 
 // --- YOYO STATE CONTROL ---
 if (state == 0) {
@@ -12,7 +12,7 @@ if (state == 0) {
 }
 else {
     var dx = ax - x;
-    var dy = ay - y;
+    var dy = ay - y - 4;
     var dist = max(1, sqrt(dx*dx + dy*dy));
 
     var rope_max = seg_len * seg_count;
@@ -25,7 +25,7 @@ else {
     // only pull if stretched past rope length
     if (dist > rope_max) {
         var stretch = dist - rope_max;
-        var pull = 0.40; // small for 20x20
+        var pull = 0.50; // small for 20x20
         vx += (dx / dist) * (stretch * pull);
         vy += (dy / dist) * (stretch * pull);
     }
