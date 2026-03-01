@@ -1,6 +1,8 @@
 var p = instance_find(target, 0);
 if (!instance_exists(p)) exit;
 
+
+
 // Desired camera position (center on player)
 var tx = p.x - cam_w * 0.5;
 var ty = p.y - 60 - cam_h * 0.5;
