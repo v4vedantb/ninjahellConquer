@@ -1,9 +1,9 @@
+/// oEnemy Step
 if (!alive) exit;
 
-// target
-if (!instance_exists(target)) target = instance_find(oPlayer, 0);
+// --- target/state ---
+if (!instance_exists(target)) target = instance_find(obj_Player, 0);
 
-// choose state
 var hasTarget = instance_exists(target);
 var dist = hasTarget ? point_distance(x, y, target.x, target.y) : 999999;
 
@@ -15,7 +15,7 @@ if (hasTarget)
 }
 else state = EState.IDLE;
 
-// run behavior (sets hsp)
+// --- behavior (sets hsp/vsp intentions) ---
 switch (state)
 {
     case EState.IDLE:   enemy_idle();   break;
@@ -23,8 +23,30 @@ switch (state)
     case EState.ATTACK: enemy_attack(); break;
 }
 
-// gravity
-if (use_gravity) vsp += gravity;
+// --- ground physics by default ---
+if (use_gravity) vsp += grav;
 
-// cooldowns
-if (atk_cd > 0) atk_cd--;
+
+// 2) Ground “snap” (keeps them from hovering over tiny gaps/edges)
+if (!place_meeting(x, y + ground_check_y, obj_ground))
+{
+    // try to snap down a few pixels to find the floor
+    var i = 0;
+    while (i < snap_down_max && !place_meeting(x, y + 1, obj_ground))
+    {
+        y += 1;
+        i++;
+    }
+
+    // if we found ground, cancel falling speed so it "sticks"
+    if (place_meeting(x, y + 1, obj_ground)) vsp = 0;
+}
+else
+{
+    // already grounded: don’t accumulate downward vsp forever
+    if (vsp > 0) vsp = 0;
+}
+
+
+// 1) Move with collision (prevents falling through)
+move_and_collide(hsp, vsp, obj_ground);

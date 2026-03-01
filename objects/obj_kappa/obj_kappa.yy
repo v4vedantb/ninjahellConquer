@@ -33,7 +33,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"spr_kappa_idle",
     "path":"sprites/spr_kappa_idle/spr_kappa_idle.yy",
