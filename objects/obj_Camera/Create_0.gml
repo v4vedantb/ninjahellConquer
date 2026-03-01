@@ -2,8 +2,8 @@
 target = obj_Player;
 
 // Camera view size (what the camera "sees" in the room)
-cam_w = 640;
-cam_h = 360;
+cam_w = 320;
+cam_h = 180;
 
 // Smoothing amount (0.05 = very smooth, 0.2 = snappier)
 follow_lerp = 0.12;
@@ -21,10 +21,8 @@ view_hport[0] = cam_h;
 var p = instance_find(target, 0);
 if (instance_exists(p)) {
     cam_x = p.x - cam_w * 0.5;
-    cam_y = p.y - cam_h * 0.5;
+    cam_y = p.y - 60 - cam_h * 0.5;
 } else {
     cam_x = 0;
     cam_y = 0;
 }
-
-audio_play_sound(Under_Blooms, 0, true)
