@@ -56,6 +56,7 @@
   "resources":[
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},
+    {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_Ground","path":"objects/obj_Ground/obj_Ground.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
@@ -77,6 +78,7 @@
     {"id":{"name":"Under_Blooms","path":"sounds/Under_Blooms/Under_Blooms.yy",},},
     {"id":{"name":"sEntranceandExit","path":"sprites/sEntranceandExit/sEntranceandExit.yy",},},
     {"id":{"name":"spr_brickfloor","path":"sprites/spr_brickfloor/spr_brickfloor.yy",},},
+    {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"spr_kappa_idle","path":"sprites/spr_kappa_idle/spr_kappa_idle.yy",},},
     {"id":{"name":"spr_mask_player","path":"sprites/spr_mask_player/spr_mask_player.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
