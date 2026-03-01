@@ -1,11 +1,22 @@
 /// oEnemy Step
-if (!alive) exit;
+if (!alive) {instance_destroy() ;exit;};
 
 // --- target/state ---
 if (!instance_exists(target)) target = instance_find(obj_Player, 0);
 
 var hasTarget = instance_exists(target);
 var dist = hasTarget ? point_distance(x, y, target.x, target.y) : 999999;
+i_frame++;
+if (place_meeting(x,y,obj_kunai) && i_frame > 10)
+{
+	hp -= 1;
+	i_frame = 0;
+}
+
+if (hp < 1)
+{
+	alive = false;
+}
 
 if (hasTarget)
 {

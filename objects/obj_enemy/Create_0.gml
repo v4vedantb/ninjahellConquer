@@ -7,6 +7,7 @@ vsp = 0;
 move_spd = 1.5;
 use_gravity = true;
 grav = 0.5;
+i_frame = 0;
 
 ground_obj = obj_ground;   // <<< base enemy collides with this
 
