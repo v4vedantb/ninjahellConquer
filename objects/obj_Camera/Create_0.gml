@@ -26,3 +26,5 @@ if (instance_exists(p)) {
     cam_x = 0;
     cam_y = 0;
 }
+
+audio_play_sound(Under_Blooms, 0, true)
