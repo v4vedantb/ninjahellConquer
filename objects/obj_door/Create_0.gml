@@ -1,9 +1,6 @@
 var targetRoom, targetX, targetY;
-
-
-
-
-open_range = 80;   // how close player must be
-anim_speed = 0.25; // door open/close speed
-
-image_speed = 0;   // we control animation manually
+image_speed=0
+//point_distance()
+//image_number=9
+open_range = 80;
+anim_speed = 0.25
