@@ -2,8 +2,8 @@
 target = obj_Player;
 
 // Camera view size (what the camera "sees" in the room)
-cam_w = 320;
-cam_h = 180;
+cam_w = 640;
+cam_h = 360;
 
 // Smoothing amount (0.05 = very smooth, 0.2 = snappier)
 follow_lerp = 0.12;
