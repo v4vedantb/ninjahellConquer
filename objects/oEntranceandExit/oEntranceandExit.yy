@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oSecondBG1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oEntranceandExit",
+  "eventList":[],
   "managed":true,
-  "name":"oSecondBG1",
+  "name":"oEntranceandExit",
   "overriddenProperties":[],
   "parent":{
     "name":"Grounds",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite10",
-    "path":"sprites/Sprite10/Sprite10.yy",
+    "name":"sEntranceandExit",
+    "path":"sprites/sEntranceandExit/sEntranceandExit.yy",
   },
   "spriteMaskId":null,
   "visible":true,
