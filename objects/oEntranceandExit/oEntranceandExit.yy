@@ -6,8 +6,8 @@
   "name":"oEntranceandExit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Grounds",
-    "path":"folders/Objects/Enviornment/Grounds.yy",
+    "name":"Yoyo",
+    "path":"folders/Objects/Yoyo.yy",
   },
   "parentObjectId":null,
   "persistent":false,
