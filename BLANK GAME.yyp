@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Tiles","folderPath":"folders/Tiles.yy","name":"Tiles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Objects/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Objects/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -95,6 +96,7 @@
     {"id":{"name":"spr_kunai","path":"sprites/spr_kunai/spr_kunai.yy",},},
     {"id":{"name":"spr_mask_player","path":"sprites/spr_mask_player/spr_mask_player.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
+    {"id":{"name":"spr_overworldgrass","path":"sprites/spr_overworldgrass/spr_overworldgrass.yy",},},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_jump","path":"sprites/spr_player_jump/spr_player_jump.yy",},},
@@ -107,6 +109,7 @@
     {"id":{"name":"sUndergroundBG","path":"sprites/sUndergroundBG/sUndergroundBG.yy",},},
     {"id":{"name":"sStarterGround","path":"tilesets/sStarterGround/sStarterGround.yy",},},
     {"id":{"name":"sStarterGroundback","path":"tilesets/sStarterGroundback/sStarterGroundback.yy",},},
+    {"id":{"name":"tls_overworldgrass","path":"tilesets/tls_overworldgrass/tls_overworldgrass.yy",},},
     {"id":{"name":"ts_VedantDung","path":"tilesets/ts_VedantDung/ts_VedantDung.yy",},},
   ],
   "resourceType":"GMProject",
