@@ -96,6 +96,7 @@
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
     {"id":{"name":"sPurpleBG","path":"sprites/sPurpleBG/sPurpleBG.yy",},},
     {"id":{"name":"sStarterBlocks","path":"sprites/sStarterBlocks/sStarterBlocks.yy",},},
+    {"id":{"name":"sUndergroundBG","path":"sprites/sUndergroundBG/sUndergroundBG.yy",},},
     {"id":{"name":"sStarterGround","path":"tilesets/sStarterGround/sStarterGround.yy",},},
     {"id":{"name":"sStarterGroundback","path":"tilesets/sStarterGroundback/sStarterGroundback.yy",},},
     {"id":{"name":"ts_VedantDung","path":"tilesets/ts_VedantDung/ts_VedantDung.yy",},},
