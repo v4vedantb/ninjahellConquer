@@ -4,4 +4,4 @@ ysp =0
 
 vsp = 0;      // vertical speed
 grav = 0.4;   // gravity strength
-jump_spd = -8;
+jump_spd = -6;

@@ -11,8 +11,10 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_effect_gaussian_blur-1.0.0","name":"io.gamemaker.gm_effect_gaussian_blur-1.0.0","path":"io.gamemaker.gm_effect_gaussian_blur-1.0.0.yyp",},
@@ -30,6 +32,8 @@
   },
   "name":"BLANK GAME",
   "resources":[
+    {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
+    {"id":{"name":"objCamera","path":"objects/objCamera/objCamera.yy",},},
     {"id":{"name":"objSolid","path":"objects/objSolid/objSolid.yy",},},
     {"id":{"name":"oClouds","path":"objects/oClouds/oClouds.yy",},},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},},
@@ -70,6 +74,8 @@
     {"id":{"name":"sGroundRight","path":"sprites/sGroundRight/sGroundRight.yy",},},
     {"id":{"name":"sHouse","path":"sprites/sHouse/sHouse.yy",},},
     {"id":{"name":"sLeftSide","path":"sprites/sLeftSide/sLeftSide.yy",},},
+    {"id":{"name":"spr_mask_player","path":"sprites/spr_mask_player/spr_mask_player.yy",},},
+    {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
     {"id":{"name":"sRightSides","path":"sprites/sRightSides/sRightSides.yy",},},
     {"id":{"name":"sSoil","path":"sprites/sSoil/sSoil.yy",},},
     {"id":{"name":"sSpiderWebGroundRight","path":"sprites/sSpiderWebGroundRight/sSpiderWebGroundRight.yy",},},
@@ -79,6 +85,7 @@
     {"id":{"name":"sStarterFloor","path":"sprites/sStarterFloor/sStarterFloor.yy",},},
     {"id":{"name":"sUndergroundBG","path":"sprites/sUndergroundBG/sUndergroundBG.yy",},},
     {"id":{"name":"sWarriorIdle","path":"sprites/sWarriorIdle/sWarriorIdle.yy",},},
+    {"id":{"name":"sWarriorMask","path":"sprites/sWarriorMask/sWarriorMask.yy",},},
     {"id":{"name":"sWarriorRun","path":"sprites/sWarriorRun/sWarriorRun.yy",},},
   ],
   "resourceType":"GMProject",
