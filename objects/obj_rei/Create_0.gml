@@ -1,6 +1,6 @@
 /// oYurei : Create
 event_inherited();
-
+use_gravity = false;   // stays floating
 hp = 3;
 move_spd = 2.2;
 aggro_range = 320;

@@ -1,14 +1,14 @@
-/// oEnemy : Create
+/// obj_Enemy : Create
 hp = 3;
 
 hsp = 0;
 vsp = 0;
 
 move_spd = 1.5;
-use_gravity = false;   // children decide
+use_gravity = true;   // children decide
 gravity = 0.4;
 
-target = oPlayer;
+target = obj_Player;
 
 enum EState { IDLE, CHASE, ATTACK, HIT, DEAD }
 state = EState.IDLE;

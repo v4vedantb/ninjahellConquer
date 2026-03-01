@@ -32,7 +32,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_rei_idle",
     "path":"sprites/spr_rei_idle/spr_rei_idle.yy",

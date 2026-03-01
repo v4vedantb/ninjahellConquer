@@ -6,7 +6,7 @@ function yoyo_move_and_bounce(_dx, _dy) {
     x += _dx;
     y += _dy;
 
-    if (place_meeting(x, y, obj_Ground)) {
+    if (place_meeting(x, y, obj_ground)) {
         // undo
         x -= _dx;
         y -= _dy;

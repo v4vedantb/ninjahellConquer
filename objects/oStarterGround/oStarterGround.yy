@@ -10,8 +10,8 @@
     "path":"folders/Objects/Enviornment/Grounds.yy",
   },
   "parentObjectId":{
-    "name":"obj_Ground",
-    "path":"objects/obj_Ground/obj_Ground.yy",
+    "name":"obj_ground",
+    "path":"objects/obj_ground/obj_ground.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
