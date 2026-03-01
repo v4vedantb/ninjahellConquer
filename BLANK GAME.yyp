@@ -72,6 +72,7 @@
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"rm_Overworld","path":"rooms/rm_Overworld/rm_Overworld.yy",},},
     {"id":{"name":"rm_Settings","path":"rooms/rm_Settings/rm_Settings.yy",},},
+    {"id":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
     {"id":{"name":"rope_init","path":"scripts/rope_init/rope_init.yy",},},
     {"id":{"name":"rope_solve_constraints","path":"scripts/rope_solve_constraints/rope_solve_constraints.yy",},},
@@ -104,6 +105,7 @@
     {"roomId":{"name":"rm_Overworld","path":"rooms/rm_Overworld/rm_Overworld.yy",},},
     {"roomId":{"name":"rm_Settings","path":"rooms/rm_Settings/rm_Settings.yy",},},
     {"roomId":{"name":"rm_Help","path":"rooms/rm_Help/rm_Help.yy",},},
+    {"roomId":{"name":"Room5","path":"rooms/Room5/Room5.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
