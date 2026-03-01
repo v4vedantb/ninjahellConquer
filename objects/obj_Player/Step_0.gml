@@ -123,7 +123,7 @@ if (attack_pressed && cool < cool_tick) {
 	cool_tick = 0;
 
     // anchor point (hand)
-    var ax = x + (sign(image_xscale) * 4);
+    var ax = x;
     var ay = y - 15;
 
     yy.x = ax;
