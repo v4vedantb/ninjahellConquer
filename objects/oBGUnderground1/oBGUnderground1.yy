@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"objSolid",
+  "%Name":"oBGUnderground1",
   "eventList":[],
   "managed":true,
-  "name":"objSolid",
+  "name":"oBGUnderground1",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sBGUnderground1",
+    "path":"sprites/sBGUnderground1/sBGUnderground1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
