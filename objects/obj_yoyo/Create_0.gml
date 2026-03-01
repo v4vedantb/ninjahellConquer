@@ -6,16 +6,16 @@ state = 0;              // 0=OUT, 1=RETRACT
 vx = 0;
 vy = 0;
 radius = 4;            // collision radius
-bounce = 0.55;          // bounciness off surfaces
+bounce = 0.35;          // bounciness off surfaces
 air_drag = 0.985;
+hit_friction = 0.75;    // extra energy loss on impact
 
 // rope settings
 seg_len = 4;        // each rope segment ~4px
 seg_count = 12;     // total rope length ~48px (good starting range)
 constraint_iters = 8;
-gravity = 0.25;
-
-max_speed = 8;      // IMPORTANT
+gravity = 0.25;      // lower = less crazy
+max_speed = 6;          // tuned for 20x20 style
 
 // verlet arrays
 rope_x  = array_create(seg_count + 1, x);
