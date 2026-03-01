@@ -66,6 +66,7 @@
     {"id":{"name":"oPurpleBG","path":"objects/oPurpleBG/oPurpleBG.yy",},},
     {"id":{"name":"oSecondBG1","path":"objects/oSecondBG1/oSecondBG1.yy",},},
     {"id":{"name":"oStarterGround","path":"objects/oStarterGround/oStarterGround.yy",},},
+    {"id":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"rm_Overworld","path":"rooms/rm_Overworld/rm_Overworld.yy",},},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
@@ -98,6 +99,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rm_Overworld","path":"rooms/rm_Overworld/rm_Overworld.yy",},},
+    {"roomId":{"name":"rm_level2","path":"rooms/rm_level2/rm_level2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
