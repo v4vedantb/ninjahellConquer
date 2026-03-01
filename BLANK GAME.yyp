@@ -76,6 +76,7 @@
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
     {"id":{"name":"spr_yoyo","path":"sprites/spr_yoyo/spr_yoyo.yy",},},
     {"id":{"name":"Sprite10","path":"sprites/Sprite10/Sprite10.yy",},},
+    {"id":{"name":"Sprite12","path":"sprites/Sprite12/Sprite12.yy",},},
     {"id":{"name":"sPurpleBG","path":"sprites/sPurpleBG/sPurpleBG.yy",},},
     {"id":{"name":"sStarterBlocks","path":"sprites/sStarterBlocks/sStarterBlocks.yy",},},
     {"id":{"name":"sStarterGround","path":"tilesets/sStarterGround/sStarterGround.yy",},},
