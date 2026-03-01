@@ -25,12 +25,12 @@ else {
     // only pull if stretched past rope length
     if (dist > rope_max) {
         var stretch = dist - rope_max;
-        var pull = 0.10; // small for 20x20
+        var pull = 0.40; // small for 20x20
         vx += (dx / dist) * (stretch * pull);
         vy += (dy / dist) * (stretch * pull);
     }
 
-    if (dist < 10) { instance_destroy(); exit; }
+    if (dist < 12) { instance_destroy(); exit; }
 }
 
 // --- YOYO PHYSICS ---
