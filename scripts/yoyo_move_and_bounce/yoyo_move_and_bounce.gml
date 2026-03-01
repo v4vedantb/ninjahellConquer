@@ -1,31 +1,31 @@
 function yoyo_move_and_bounce(_dx, _dy) {
+    var dir = point_direction(0, 0, _dx, _dy);
+    var dist = point_distance(0, 0, _dx, _dy);
 
-    // Horizontal
+    // Try to move
     x += _dx;
-    if (place_meeting(x, y, obj_Ground)) {
-        // push out
-        var s = sign(_dx);
-        while (place_meeting(x, y, obj_Ground)) x -= s;
-
-        // bounce
-        vx = -vx * bounce;
-
-        // optional: hit enemies on impact
-        //with (instance_place(x, y, obj_enemy)) {
-            // take damage, etc
-        //}
-    }
-
-    // Vertical
     y += _dy;
+
+    // If we hit solid ground, move back and resolve properly
     if (place_meeting(x, y, obj_Ground)) {
-        var s2 = sign(_dy);
-        while (place_meeting(x, y, obj_Ground)) y -= s2;
+        x -= _dx;
+        y -= _dy;
 
-        vy = -vy * bounce;
+        // Move as close as possible without overlapping
+        move_contact_solid(dir, dist);
 
-        //with (instance_place(x, y, obj_enemy)) {
-            // take damage, etc
-        //}
+        // Bounce off the solid surface
+        move_bounce_solid(false);
+
+        // Energy loss so it doesn't rocket
+        vx *= hit_friction;
+        vy *= hit_friction;
+
+        vx *= bounce / max(0.0001, hit_friction);
+        vy *= bounce / max(0.0001, hit_friction);
+
+        // Hard clamp
+        var sp = sqrt(vx*vx + vy*vy);
+        if (sp > max_speed) { vx = vx/sp*max_speed; vy = vy/sp*max_speed; }
     }
 }

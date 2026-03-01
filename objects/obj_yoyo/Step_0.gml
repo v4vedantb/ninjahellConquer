@@ -11,17 +11,26 @@ if (state == 0) {
     if (out_timer >= out_time) state = 1; // always retract after a short throw
 }
 else {
-    // RETRACT: spring pull toward anchor
     var dx = ax - x;
     var dy = ay - y;
-    var dist = max(1, point_distance(x, y, ax, ay));
+    var dist = max(1, sqrt(dx*dx + dy*dy));
 
-    var pull = 0.9;
-    vx += (dx / dist) * pull;
-    vy += (dy / dist) * pull;
+    var rope_max = seg_len * seg_count;
 
-    // end when close
-    if (dist < 12) { instance_destroy(); exit; }
+    // damping kills slingshot energy
+    var damp = 0.85;
+    vx *= damp;
+    vy *= damp;
+
+    // only pull if stretched past rope length
+    if (dist > rope_max) {
+        var stretch = dist - rope_max;
+        var pull = 0.10; // small for 20x20
+        vx += (dx / dist) * (stretch * pull);
+        vy += (dy / dist) * (stretch * pull);
+    }
+
+    if (dist < 10) { instance_destroy(); exit; }
 }
 
 // --- YOYO PHYSICS ---
@@ -30,10 +39,8 @@ vx *= air_drag;
 vy *= air_drag;
 
 // move + bounce collision (solid objects)
-var steps = ceil(max(abs(vx), abs(vy)) / 4); // smaller = safer
-for (var s = 0; s < steps; s++) {
-    yoyo_move_and_bounce(vx/steps, vy/steps);
-}
+yoyo_move_and_bounce(vx, vy);
+
 
 // --- ROPE VERLET SIM ---
 rope_verlet(ax, ay);
@@ -41,3 +48,6 @@ rope_solve_constraints(ax, ay);
 
 // After constraints, we force rope end to match yoyo pos,
 // and rope start to match anchor (done in solve function).
+
+var sp = sqrt(vx*vx + vy*vy);
+if (sp > max_speed) { vx = vx/sp*max_speed; vy = vy/sp*max_speed; }
