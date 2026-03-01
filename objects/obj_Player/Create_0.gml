@@ -27,5 +27,9 @@ jump_buffer = 0;
 
 facing = 1;
 
+// Stats
+hp = 6;
+
+
 // start sprite
 sprite_index = spr_player_idle;
